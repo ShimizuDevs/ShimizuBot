@@ -28,6 +28,6 @@ module.exports = class Dog extends Command {
 				msg.author.displayAvatarURL()
 			)
 			.setTimestamp();
-		message.say(embed);
+		msg.say(embed);
 	}
 };
