@@ -11,10 +11,10 @@ module.exports = class Cat extends Command {
 			description: 'Gets a random cat image.'
 		});
 	}
-	
+
 	async run(msg) {
 		const { body } = await request.get('https://api.alexflipnote.dev/cats');
-		        
+
 		msg.say(new MessageAttachment(body.file));
 	}
 };
