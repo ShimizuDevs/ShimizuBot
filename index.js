@@ -18,7 +18,7 @@ server.listen(3000);
 
 client.registry
 	.registerDefaultTypes()
-	.registerGroups([['fun', 'Fun'], ['util', 'Utility']])
+	.registerGroups([['fun', 'Fun'], ['util', 'Utility'], ['info', 'Information']])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
 	.registerCommandsIn(path.join(__dirname, 'commands'));
